@@ -77,10 +77,13 @@ $(document).ready(function () {
         navigator.notification.alert(msg, null, '+ em conta', 'Ok');
     }
 
-    $('#btnNovo').click(function () {
-        $(location).attr('href', '#item1');
-    });
+    $('#btnNovo').click(resetApp);
 
+    function resetApp () {
+        window.open('index.html', '_self');
+    }
+
+    $('#reset').click(resetApp);
 });
 
 </script>
@@ -100,14 +103,14 @@ $(document).ready(function () {
                 <label for="quantidade1">De</label>
                 <input type="number" name="quantidade1" id="quantidade1"  placeholder="Ex.: 30 metros" />
                 <select id="medida1" name="medida1" data-theme="b">
-                    <option value="">Qual medida?</option>
+                    <option id="op1">Qual medida?</option>
                     <option value="1000">Litro / Metro / Kg</option>
                     <option value="1">Ml / Cm / g</option>
-                </select>
                 </select>
                 <label for="valor1">Por?</label>
                 <input type="tel" class="valor" name="valor1" id="valor1"  placeholder="Ex.: 1,99" />
                 <button data-theme="b" id="btnAvancar">Avançar</button>
+                <button id="reset">reset</button>
             </div>
         </div>
 
@@ -123,7 +126,7 @@ $(document).ready(function () {
                 <label for="quantidade2">De</label>
                 <input type="number" name="quantidade2" id="quantidade2"  placeholder="Ex.: 30 metros" />
                 <select id="medida2" name="medida2" data-theme="b">
-                    <option value="">Qual medida?</option>
+                    <option>Qual medida?</option>
                     <option value="1000">Litro / Metro / Kg</option>
                     <option value="1">Ml / Cm / g</option>
                 </select>
@@ -132,20 +135,6 @@ $(document).ready(function () {
                 <button data-theme="b" id="btnCalcular">Qual item + em conta?</button>
                 <button data-theme="b" id="btnNovo">Nova consulta</button>
             </div>
-        </div>
-
-        <div data-role="popup" id="final">
-            <div data-role="header" style="background-color: white; border: none;">
-                <div align="center">
-                    <img src="./img/logo.png" style="width: 50%;">
-                </div>
-            </div>
-            <div role="main" class="ui-content" data-theme="b">
-                Resultado: 
-                <div id="resultado">
-                </div>
-            </div>
-            
         </div>
     </body>
         <script type="text/javascript" src="cordova.js"></script>
