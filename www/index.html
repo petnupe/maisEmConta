@@ -35,7 +35,7 @@ $(document).ready(function () {
     $('#btnCalcular').click(function () {
 
         var item1 = {
-                'nome': 'Item 1',
+                'nome': 'Produto 1',
                 'unidade': $('#unidade1').val(),
                 'quantidade' : $('#quantidade1').val(),
                 'medida': $('#medida1').val(),
@@ -43,7 +43,7 @@ $(document).ready(function () {
             };
 
         var item2 = { 
-                'nome': 'Item 2',
+                'nome': 'Produto 2',
                 'unidade': $('#unidade2').val(),
                 'quantidade' : $('#quantidade2').val(),
                 'medida': $('#medida2').val(),
@@ -71,7 +71,7 @@ $(document).ready(function () {
     });
 
     function showResult(item) {
-        var msg = 'O Produto ' + item.nome + ' está + em conta!';
+        var msg = 'O ' + item.nome + ' está + em conta!';
         //alert(msg);
         navigator.notification.alert(msg, null, '+ em conta', 'Ok');
     }
@@ -130,7 +130,7 @@ $(document).ready(function () {
                 </select>
                 <label for="valor2">Por?</label>
                 <input type="tel" class="valor" name="valor2" id="valor2"  placeholder="Ex.: 1,99" />
-                <button data-theme="b" id="btnCalcular">Qual item + em conta?</button>
+                <button data-theme="b" id="btnCalcular">Qual produto + em conta?</button>
                 <button data-theme="b" id="btnNovo">Nova consulta</button>
             </div>
         </div>
