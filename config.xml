@@ -2,11 +2,12 @@
 <widget id="com.maisEmConta" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>+ Em Conta</name>
     <description>
-        Aplicativo muito útil para comparação de preços e produtos com base em sua custo benefício.
+        Aplicativo muito útil para comparação de preços e produtos com base em seu custo benefício.
     </description>
     <author email="peterson@tecbiz.com.br" href="http://www.tecbiz.com.br">
         TecBiz TI Team
     </author>
+    <application android:debuggable="false"></application>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
