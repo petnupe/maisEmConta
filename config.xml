@@ -7,7 +7,6 @@
     <author email="peterson@tecbiz.com.br" href="http://www.tecbiz.com.br">
         TecBiz TI Team
     </author>
-    <application android:debuggable="false"></application>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14" />
